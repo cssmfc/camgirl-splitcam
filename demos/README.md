@@ -29,8 +29,8 @@ I've made a short video and posted on [YouTube](https://www.youtube.com/watch?v=
 
 **list of ReadMe files for each resource we add in this repository**
 
- * [My Tip Menu - SplitCam Overlay](https://cssmfc.github.io/camgirl-splitcam/demos/splitcam-mytipmenu-overlay/README.md)
- * [Congratulation 2in1 - SplitCam Overlay](https://cssmfc.github.io/camgirl-splitcam/demos/congrats-overlay/README.md)
+ * [My Tip Menu - SplitCam Overlay](https://github.com/cssmfc/camgirl-splitcam/blob/main/demos/splitcam-mytipmenu-overlay/README.md)
+ * [Congratulation 2in1 - SplitCam Overlay](https://github.com/cssmfc/camgirl-splitcam/blob/main/demos/congrats-overlay/README.md)
 
 
 
