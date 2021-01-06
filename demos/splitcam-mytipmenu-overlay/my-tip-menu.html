@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tip Menu 01</title>
+<style>
+*{box-sizing:border-box;}
+body{width:100%;margin:0 auto;}
+#tipmenu{display:block;width:50%;height:auto;margin:0 auto;padding:2em;background-color:rgba(0,0,0,0.60);font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;font-size: calc(15px + 6 * ((100vw - 320px) / 680));color:#fff;font-weight:100;margin-left:0px;box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);}
+#tipmenu h3{display:block;width:90%;height:auto;margin:0 auto 22px auto;text-align:center;font-size: calc(25px + 6 * ((100vw - 320px) / 680));color:#F39;font-weight:500;}
+.tiprequest{display:block;width:90%;height:auto;margin:5px auto 4px auto;padding:.4em;background-color:rgba(0,0,0,0.70);
+-webkit-transform: translate(0%, -95%) rotateY(10deg);transform: translate(0%, -95%) rotateY(10deg);-webkit-animation: view 7s ease-in-out forwards;animation: view 7s ease-in-out forwards;opacity:0;border-radius:10px;}
+.tiprequest p:nth-child(1){display:inline-block;width:65%;height:auto;margin:0 auto;text-align:left;font-size: calc(15px + 6 * ((100vw - 320px) / 680));color:#fff;font-weight:100;}
+.tiprequest p:nth-child(2){display:inline-block;width:30%;height:auto;margin:0 auto;text-align:center;background-color:#F39;color:#fff;clip-path: polygon(7% 0, 100% 0%, 100% 100%, 7% 100%, 0% 50%);font-size: calc(12px + 5 * ((100vw - 320px) / 680));color:#fff;font-weight:400;padding:.3em 1em .3em;
+animation: lego 2.5s forwards;opacity:0;}	
+
+.tiprequest span{display:block;width:90%;height:auto;margin:18px auto 6px auto;text-align:center;font-size: calc(15px + 6 * ((100vw - 320px) / 680));color:#fff;font-weight:100;padding:.4em;}
+
+#tipmenu div:nth-child(1){-webkit-animation-delay: .5s;animation-delay: .5s;}
+#tipmenu div:nth-child(2){-webkit-animation-delay: .7s;animation-delay: .7s;}
+#tipmenu div:nth-child(3){-webkit-animation-delay: .9s;animation-delay: .9s;}
+#tipmenu div:nth-child(4){-webkit-animation-delay: 1s;animation-delay: 1s;}
+#tipmenu div:nth-child(5){-webkit-animation-delay: 1.3s;animation-delay: 1.3s;}
+#tipmenu div:nth-child(6){-webkit-animation-delay: 1.5s;animation-delay: 1.5s;}
+#tipmenu div:nth-child(7){-webkit-animation-delay: 1.7s;animation-delay: 1.7s;}
+
+.tiprequest p:nth-child(2){-webkit-animation-delay: 3s;animation-delay: 3s;opacity:0;}
+
+@keyframes view {
+    from {-webkit-transform: translate(-20%, 55%) rotateY(90deg); opacity:.5;}
+	15%{-webkit-transform: translate(0%, 5%) rotateY(0deg);  opacity:1;}
+	to {-webkit-transform: translate(0%, 5%) rotateY(0deg);  opacity:1;}
+	}
+	
+
+
+@keyframes lego {
+    from {-webkit-transform: translate(-120%, -55%) rotateY(-90deg); opacity:0;background-color:#fff;}
+	10%{-webkit-transform: translate(0%, -25%) rotateY(10deg);  opacity:1;background-color:#F39;}
+	to {-webkit-transform: translate(0%, 5%) rotateY(0deg);  opacity:1;background-color:#F39;}
+	}	
+.insider{clip-path: polygon(0 0, 100% 0, 96% 50%, 100% 100%, 0 100%, 4% 50%);border-top:5px solid #F39;border-bottom:5px solid #F39;box-shadow:inset 0 6px 18px 21px #000;}
+</style>
+</head>
+
+<body>
+
+   <div id="tipmenu">
+    <h3 contenteditable="true">My Tip Menu</h3>
+    
+    <div class="tiprequest">
+         <p contenteditable="true">Add your tip request here</p>
+         <p contenteditable="true">100 tokens</p>
+      </div>
+      
+      
+       <div class="tiprequest">
+         <p contenteditable="true">Add your tip request here</p>
+         <p contenteditable="true">100 tokens</p>
+      </div>
+      
+      
+       <div class="tiprequest">
+         <p contenteditable="true">Add your tip request here</p>
+         <p contenteditable="true">100 tokens</p>
+      </div>
+      
+      
+       <div class="tiprequest">
+         <p contenteditable="true">Add your tip request here</p>
+         <p contenteditable="true">100 tokens</p>
+      </div>
+      
+      
+       <div class="tiprequest">
+         <p contenteditable="true">Add your tip request here</p>
+         <p contenteditable="true">100 tokens</p>
+      </div>
+      
+      
+       <div class="tiprequest">
+         <p contenteditable="true">Add your tip request here</p>
+         <p contenteditable="true">100 tokens</p>
+      </div>
+      
+      
+       <div class="tiprequest insider">
+         <span contenteditable="true">I do take suggestions for my Tip Menu but never PM/DM me when I'm in a show. Grab my attention with a big tip</span>
+      </div>
+   
+   
+   </div>
+
+</body>
+</html>

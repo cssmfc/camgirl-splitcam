@@ -1,0 +1,333 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Camgirl.Cloud - SplitCam - Tutorials</title>
+<style>
+html{ scroll-behavior: smooth;}
+*{box-sizing:border-box;}
+body{width:90%;margin:0 auto;font-size: calc(15px + 6 * ((100vw - 320px) / 680));color:#033;padding:0;box-sizing:border-box;font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;background-color:#222222;
+background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%233C56d1' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");}
+#container{display:block;width:100%;height:auto;margin:3em auto 2em auto;background-color:#fff;border-radius:8px 8px 0 0;}
+#header,#continut,#footer{display:block;width:100%;height:auto;margin:0 auto;}
+
+
+
+#header{display:block;background: rgb(53,84,105);
+background: -moz-linear-gradient(318deg, rgba(53,84,105,1) 0%, rgba(24,146,156,1) 100%);
+background: -webkit-linear-gradient(318deg, rgba(53,84,105,1) 0%, rgba(24,146,156,1) 100%);
+background: linear-gradient(318deg, rgba(53,84,105,1) 0%, rgba(24,146,156,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#355469",endColorstr="#18929c",GradientType=1);color:#fff;padding:2em 0em 2em;border-radius:8px 8px 0 0;}
+#header h1{display:block;width:90%;height:auto;margin:0 auto;text-align:left;font-size: calc(35px + 6 * ((100vw - 320px) / 680));color:rgba(255,255,255,.70);font-weight:400;text-shadow:0 -1px 5px #000;}
+#header h1 svg{width:1.7em;height:1.7em;transform:translate(0px, 12px);}
+#header h1 span{font-weight:300;}
+#header h1 em{display:block;width:100%;height:auto;margin:0 auto;font-size: calc(12px + 4 * ((100vw - 320px) / 680));}
+#continut{}
+.boxed{display:block;width:90%;height:auto;margin:0 auto;padding:1em;}
+.boxed h2{display:block;width:100%;height:auto;margin:0 auto;text-align:left;font-size: calc(25px + 6 * ((100vw - 320px) / 680));color:#069;font-weight:400;text-shadow:0 -1px 1px #999;}
+.screenshot{display:block;width:90%;height:auto;margin:5px auto 7px auto;}
+.screenshot img{display:block;width:100%;height:auto;margin:0 auto;}
+span.icons{display:block;width:80%;padding-left:.5em;background-color:#f1f1f1;font-size: calc(13px + 6 * ((100vw - 320px) / 680));}
+/*** SVGs ***/
+.svg-icon-tut {width: 1em;height: 1em;}
+.svg-icon-tut path,
+.svg-icon-tut polygon,
+.svg-icon-tut rect {fill: #666666;}
+.svg-icon-tut circle {stroke: #666666;stroke-width: 1;}
+
+
+
+.svg-icon-socials {width: 1em;height: 1em;}
+.svg-icon-socials path,
+.svg-icon-socials polygon,
+.svg-icon-socials rect {fill: #999999;}
+.svg-icon-socials circle {stroke: #999999;stroke-width: 1;}
+
+
+.svg-icon-download {width: 1em;height: 1em;margin-left:-10px;}
+.svg-icon-download path,
+.svg-icon-download polygon,
+.svg-icon-download rect {fill: #f1f1f1;}
+.svg-icon-download circle {stroke: #f1f1f1;stroke-width: 1;}
+
+
+.svg-icon-top {width: 1.5em;height:1.5em;transform:translateY(8px);}
+.svg-icon-top path,
+.svg-icon-top polygon,
+.svg-icon-top rect {fill: #cccccc;}
+.svg-icon-top circle {stroke: #cccccc;stroke-width: 1;}
+
+
+#footer{background-color:#111;padding:.4em 0 1em;margin-top:-20px;}
+.fobox{display:block;width:50%;height:auto;float:left;}
+.foboxcenter{display:block;width:90%;height:auto;margin:0 auto;float:none;clear:left;text-align:center;}
+.footersection{display:block;width:90%;height:auto;margin:0 auto;float:none;clear:left;}
+.links_footer a,.links_footer a:visited{display:block;width:90%;height:auto;margin:0 auto;font-size: calc(13px + 4 * ((100vw - 320px) / 680));color:#999;text-decoration:none;font-weight:100;}
+.links_footer a:hover{color:#F36;text-decoration:none;}
+.footersection strong{display:block;color:#777;font-size: calc(15px + 4 * ((100vw - 320px) / 680));font-weight:300;}
+.footersection strong:after{content:'';display:block;width:80%;height:3px;background-color:rgba(0,0,0,0.30);clip-path: polygon(0 0, 99% 0, 100% 100%, 0 100%);}
+.foboxcenter p{display:block;width:90%;height:auto;margin:30px auto 22px auto;text-align:center;font-size:13px;color:#555;padding-top:4em;}
+
+.downloadwrapper{display:block;width:100%;height:auto;margin:0 auto;padding:2em 0em 2em;text-align:center;background-color:#000;background-image:url(../assets/img/weird.jpg);background-size:cover;background-repeat:no-repeat;background-position:center;background-attachment:fixed;}
+.download{display:block;width:80%;height:auto;margin:0 auto;padding:1.5em 2em 1.5em;text-align:left;background-color:rgba(0,0,0,.70);}
+.download p{display:block;width:90%;height:auto;margin:0 auto;font-size: calc(18px + 6 * ((100vw - 320px) / 680));font-weight:100;color:#fff;}
+.download h2{display:block;width:90%;height:auto;margin:0 auto;font-size: calc(28px + 6 * ((100vw - 320px) / 680));font-weight:400;color:#fff;}
+.download a,.download a:visited{display:block;width:40%;height:auto;margin:20px auto 22px auto;padding:1em 0em 1em;text-align:center;text-decoration:none;color:rgba(255,255,255,.50);border-radius:7px;background-color:#233C56;box-shadow:0 2px 3px 1px #000;transition:all .3s;font-size: calc(12px + 6 * ((100vw - 320px) / 680));text-transform:uppercase;}
+.download a:hover{background-color: rgb(251,7,127);color:#fff;text-decoration:none;box-shadow:0 1px 5px 3px #000;}
+code{display:block;width:90%;height:auto;background-color:#f1f1f1;color:#F30;font-size: calc(14px + 4 * ((100vw - 320px) / 680));padding:.5em;}
+.disclimer{display:block;width:100%;height:auto;margin:0px auto -20px auto;text-align:center;font-size: calc(14px + 4 * ((100vw - 320px) / 680));padding:.7em 0em .7em;background: rgb(53,84,105);
+background: -moz-linear-gradient(318deg, rgba(53,84,105,1) 0%, rgba(24,146,156,1) 100%);
+background: -webkit-linear-gradient(318deg, rgba(53,84,105,1) 0%, rgba(24,146,156,1) 100%);
+background: linear-gradient(318deg, rgba(53,84,105,1) 0%, rgba(24,146,156,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#355469",endColorstr="#18929c",GradientType=1);}
+.disclimer em{display:block;width:90%;height:auto;margin:0 auto;padding:.5em;font-size: calc(12px + 4 * ((100vw - 320px) / 680));color:rgba(255,255,255,0.8);font-weight:100;text-align:left;}
+.disclimer a,.disclimer a:visited{color:#0CF;text-decoration:none;}
+.disclimer a:hover{color:#fff;text-deoration:none;}
+.totop{display:block;width:100%;height:auto;margin:0 auto;text-align:center;background: rgb(53,84,105);
+background: -moz-linear-gradient(318deg, rgba(53,84,105,1) 0%, rgba(24,146,156,1) 100%);
+background: -webkit-linear-gradient(318deg, rgba(53,84,105,1) 0%, rgba(24,146,156,1) 100%);
+background: linear-gradient(318deg, rgba(53,84,105,1) 0%, rgba(24,146,156,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#355469",endColorstr="#18929c",GradientType=1);}
+.totop a.button,.totop a.button:visited{text-align:center;margin:0 auto;background-color:rgb(53,84,105);padding:.07em 0em .05em;border-radius:100%/100%;}
+.totop a.button:hover{background-color:#222;}
+.totop a.button .svg-icon-top {width: 1.5em;height:1.5em;transform:translateY(8px);}
+.totop a.button .svg-icon-top path,
+.totop a.button .svg-icon-top polygon,
+.totop a.button .svg-icon-top rect {fill: #cccccc;}
+.totop a.button .svg-icon-top circle {stroke: #cccccc;stroke-width: 1;}
+
+.totop a.button:hover .svg-icon-top {width: 1.5em;height:1.5em;transform:translateY(8px);}
+.totop a.button:hover .svg-icon-top path,
+.totop a.button:hover .svg-icon-top polygon,
+.totop a.button:hover .svg-icon-top rect {fill: #ffffff;}
+.totop a.button:hover .svg-icon-top circle {stroke: #ffffff;stroke-width: 1;}
+
+
+
+
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+.ripple:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+h2 span.swing{display:inline-block;width:30px;height:auto;text-align:center;transform:rotate(-20deg);transform-origin:top center;animation: SwingIt 2s infinite;}
+.svg-icon-premium {width: 1em;height: 1em;transform:translate(2px,2px);margin-right:3px;}
+.svg-icon-premium path,
+.svg-icon-premium polygon,
+.svg-icon-premium rect {fill: #ffffff;}
+.svg-icon-premium circle {stroke: #ffffff;stroke-width: 1;}
+
+@keyframes SwingIt  {
+    0% {transform:rotate(20deg);}
+	50% {transform:rotate(-20deg);fill: #FC3;stroke:#FC3;}
+	100% {transform:rotate(20deg);}}
+
+.menu{display:block;width:100%;height:auto;margin:0 auto;top:0;left:0;background: rgb(53,84,105);
+background: -moz-linear-gradient(318deg, rgba(53,84,105,1) 0%, rgba(24,146,156,1) 100%);
+background: -webkit-linear-gradient(318deg, rgba(53,84,105,1) 0%, rgba(24,146,156,1) 100%);
+background: linear-gradient(318deg, rgba(53,84,105,1) 0%, rgba(24,146,156,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#355469",endColorstr="#18929c",GradientType=1);padding:0em 0em .3em;border-radius:0 0 5px 5px;}
+.menu a,.menu a:visited{display:inline-block;text-decoration:none;opacity:0.6;color:#fff;margin:3px 6px 4px 5px;text-align:center;padding:.4em 1em .4em;font-size: calc(12px + 4 * ((100vw - 320px) / 680));font-weight:100;}
+.menu a:hover{opacity:1;}
+
+.svg-icon-menu {width: 1em;height: 1em;transform:translate(2px,2px);margin-right:3px;}
+.svg-icon-menu path,
+.svg-icon-menu polygon,
+.svg-icon-menu rect {fill: #ffffff;}
+.svg-icon-menu circle {stroke: #ffffff;stroke-width: 1;}
+
+.template{display:block;width:50%;height:auto;margin:0 auto;float:left;box-sizing:border-box;text-align:center;padding:0em 0em 1em;transition:all .4s;}
+.template p{display:block;width:90%;height:auto;margin:0 auto 8px auto;font-size: calc(14px + 4 * ((100vw - 320px) / 680));text-align:left;}
+.template img{display:block;width:99%;height:auto;margin:0 auto 12px auto;transition:all .4s;}
+.template:hover{background-color:#f1f1f1;}
+.template:hover img{transform:scale(.9);box-shadow:0 0 7px #999,0 5px 6px -4px #000;}
+.template a, .template a:visited{display:inline-block;padding:.3em 1em .3em;background-color:#26424A;text-decoration:none;color:#fff;border-radius:5px;font-size: calc(12px + 4 * ((100vw - 320px) / 680));font-weight:100;}
+.template a:hover{background-color:#93C;color:#fff;}
+</style>
+</head>
+
+<body>
+
+
+<div class="menu">
+<a href="../index.html"><svg class="svg-icon-menu" viewBox="0 0 20 20">
+  <path d="M18.121,9.88l-7.832-7.836c-0.155-0.158-0.428-0.155-0.584,0L1.842,9.913c-0.262,0.263-0.073,0.705,0.292,0.705h2.069v7.042c0,0.227,0.187,0.414,0.414,0.414h3.725c0.228,0,0.414-0.188,0.414-0.414v-3.313h2.483v3.313c0,0.227,0.187,0.414,0.413,0.414h3.726c0.229,0,0.414-0.188,0.414-0.414v-7.042h2.068h0.004C18.331,10.617,18.389,10.146,18.121,9.88 M14.963,17.245h-2.896v-3.313c0-0.229-0.186-0.415-0.414-0.415H8.342c-0.228,0-0.414,0.187-0.414,0.415v3.313H5.032v-6.628h9.931V17.245z M3.133,9.79l6.864-6.868l6.867,6.868H3.133z"></path>
+						</svg> Home</a>
+<a href="#"><svg class="svg-icon-menu" viewBox="0 0 20 20">
+							<path d="M8.627,7.885C8.499,8.388,7.873,8.101,8.13,8.177L4.12,7.143c-0.218-0.057-0.351-0.28-0.293-0.498c0.057-0.218,0.279-0.351,0.497-0.294l4.011,1.037C8.552,7.444,8.685,7.667,8.627,7.885 M8.334,10.123L4.323,9.086C4.105,9.031,3.883,9.162,3.826,9.38C3.769,9.598,3.901,9.82,4.12,9.877l4.01,1.037c-0.262-0.062,0.373,0.192,0.497-0.294C8.685,10.401,8.552,10.18,8.334,10.123 M7.131,12.507L4.323,11.78c-0.218-0.057-0.44,0.076-0.497,0.295c-0.057,0.218,0.075,0.439,0.293,0.495l2.809,0.726c-0.265-0.062,0.37,0.193,0.495-0.293C7.48,12.784,7.35,12.562,7.131,12.507M18.159,3.677v10.701c0,0.186-0.126,0.348-0.306,0.393l-7.755,1.948c-0.07,0.016-0.134,0.016-0.204,0l-7.748-1.948c-0.179-0.045-0.306-0.207-0.306-0.393V3.677c0-0.267,0.249-0.461,0.509-0.396l7.646,1.921l7.654-1.921C17.91,3.216,18.159,3.41,18.159,3.677 M9.589,5.939L2.656,4.203v9.857l6.933,1.737V5.939z M17.344,4.203l-6.939,1.736v9.859l6.939-1.737V4.203z M16.168,6.645c-0.058-0.218-0.279-0.351-0.498-0.294l-4.011,1.037c-0.218,0.057-0.351,0.28-0.293,0.498c0.128,0.503,0.755,0.216,0.498,0.292l4.009-1.034C16.092,7.085,16.225,6.863,16.168,6.645 M16.168,9.38c-0.058-0.218-0.279-0.349-0.498-0.294l-4.011,1.036c-0.218,0.057-0.351,0.279-0.293,0.498c0.124,0.486,0.759,0.232,0.498,0.294l4.009-1.037C16.092,9.82,16.225,9.598,16.168,9.38 M14.963,12.385c-0.055-0.219-0.276-0.35-0.495-0.294l-2.809,0.726c-0.218,0.056-0.351,0.279-0.293,0.496c0.127,0.506,0.755,0.218,0.498,0.293l2.807-0.723C14.89,12.825,15.021,12.603,14.963,12.385"></path>
+						</svg> Tutorials</a>
+  <a href="https://github.com/cssmfc/camgirl-splitcam/discussions" target="_blank"><svg class="svg-icon-menu" viewBox="0 0 20 20">
+							<path d="M17.211,3.39H2.788c-0.22,0-0.4,0.18-0.4,0.4v9.614c0,0.221,0.181,0.402,0.4,0.402h3.206v2.402c0,0.363,0.429,0.533,0.683,0.285l2.72-2.688h7.814c0.221,0,0.401-0.182,0.401-0.402V3.79C17.612,3.569,17.432,3.39,17.211,3.39M16.811,13.004H9.232c-0.106,0-0.206,0.043-0.282,0.117L6.795,15.25v-1.846c0-0.219-0.18-0.4-0.401-0.4H3.189V4.19h13.622V13.004z"></path>
+						</svg> Support</a>    
+  <a href="../dan.html" target="_blank"><svg class="svg-icon-menu" viewBox="0 0 20 20">
+							<path d="M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297H3.415z"></path>
+						</svg> Author</a>                                         
+</div>
+
+<div id="container">
+
+  <div id="header">
+   <h1>Camgirl.Cloud / Downloads
+      <em class="in">resources, overlays, tutorials by Dan N</em></h1>
+  </div>
+  
+  <div id="continut">
+  
+      <div class="boxed">
+      
+          <div class="template">
+           <img src="../assets/img/empty.jpg" alt="Demo"/>
+           <p>TBA</p>
+           <div><a class="ripple" href="#">TBA</a> <a class="ripple" href="#">TBA</a></div>
+          </div>
+          
+          <div class="template">
+           <img src="../assets/img/empty.jpg" alt="Demo"/>
+           <p>TBA</p>
+           <div><a class="ripple" href="#">TBA</a> <a class="ripple" href="#">TBA</a></div>
+          </div>
+          
+          <div class="cleafix"></div>
+       </div>
+       
+       
+       <div class="boxed">
+      
+          <div class="template">
+           <img src="../assets/img/empty.jpg" alt="Demo"/>
+           <p>TBA</p>
+           <div><a class="ripple" href="#">TBA</a> <a class="ripple" href="#">TBA</a></div>
+          </div>
+          
+          <div class="template">
+           <img src="../assets/img/empty.jpg" alt="Demo"/>
+           <p>TBA</p>
+           <div><a class="ripple" href="#">TBA</a> <a class="ripple" href="#">TBA</a></div>
+          </div>
+          
+          <div class="cleafix"></div>
+       </div>
+       
+       
+       <div class="boxed">
+      
+          <div class="template">
+           <img src="../assets/img/empty.jpg" alt="Demo"/>
+           <p>TBA</p>
+           <div><a class="ripple" href="#">TBA</a> <a class="ripple" href="#">TBA</a></div>
+          </div>
+          
+          <div class="template">
+           <img src="../assets/img/empty.jpg" alt="Demo"/>
+           <p>TBA</p>
+           <div><a class="ripple" href="#">TBA</a> <a class="ripple" href="#">TBA</a></div>
+          </div>
+          
+          <div class="cleafix"></div>
+       </div>
+       
+       
+       <div class="boxed">
+      
+          <div class="template">
+           <img src="../assets/img/empty.jpg" alt="Demo"/>
+           <p>TBA</p>
+           <div><a class="ripple" href="#">TBA</a> <a class="ripple" href="#">TBA</a></div>
+          </div>
+          
+          <div class="template">
+           <img src="../assets/img/empty.jpg" alt="Demo"/>
+           <p>TBA</p>
+           <div><a class="ripple" href="#">TBA</a> <a class="ripple" href="#">TBA</a></div>
+          </div>
+          
+          <div class="cleafix"></div>
+       </div>
+       
+       
+       
+       <div class="boxed">
+          <h2>Customization &amp; Support</h2>
+          <p>All downloads have some type of documentation and/or install instructions to help you get started.<br>
+          Further customization or assistance beyond the scope of already provided documentation might fall under commercial service.</p>
+          <p>I do offer free downloads and resources but time is not my friend. I'm sure you'll do just fine by yourself :) </p>
+       </div>
+       
+       
+       
+       
+<div class="downloadwrapper">       
+       <div class="download">
+       <h2><span class="swing"><svg class="svg-icon-premium" viewBox="0 0 20 20">
+							<path d="M15.94,10.179l-2.437-0.325l1.62-7.379c0.047-0.235-0.132-0.458-0.372-0.458H5.25c-0.241,0-0.42,0.223-0.373,0.458l1.634,7.376L4.06,10.179c-0.312,0.041-0.446,0.425-0.214,0.649l2.864,2.759l-0.724,3.947c-0.058,0.315,0.277,0.554,0.559,0.401l3.457-1.916l3.456,1.916c-0.419-0.238,0.56,0.439,0.56-0.401l-0.725-3.947l2.863-2.759C16.388,10.604,16.254,10.22,15.94,10.179M10.381,2.778h3.902l-1.536,6.977L12.036,9.66l-1.655-3.546V2.778z M5.717,2.778h3.903v3.335L7.965,9.66L7.268,9.753L5.717,2.778zM12.618,13.182c-0.092,0.088-0.134,0.217-0.11,0.343l0.615,3.356l-2.938-1.629c-0.057-0.03-0.122-0.048-0.184-0.048c-0.063,0-0.128,0.018-0.185,0.048l-2.938,1.629l0.616-3.356c0.022-0.126-0.019-0.255-0.11-0.343l-2.441-2.354l3.329-0.441c0.128-0.017,0.24-0.099,0.295-0.215l1.435-3.073l1.435,3.073c0.055,0.116,0.167,0.198,0.294,0.215l3.329,0.441L12.618,13.182z"></path>
+						</svg></span> GO FOR PREMIUM</h2>
+       <p>Searching for custom Chaturbate Bio designs? Try Camgirl Live Editor tool...</p>
+         <a href="https://camgirl.cloud/editor/" target="_blank"><svg class="svg-icon-download" viewBox="0 0 20 20">
+							<path d="M9.719,17.073l-6.562-6.51c-0.27-0.268-0.504-0.567-0.696-0.888C1.385,7.89,1.67,5.613,3.155,4.14c0.864-0.856,2.012-1.329,3.233-1.329c1.924,0,3.115,1.12,3.612,1.752c0.499-0.634,1.689-1.752,3.612-1.752c1.221,0,2.369,0.472,3.233,1.329c1.484,1.473,1.771,3.75,0.693,5.537c-0.19,0.32-0.425,0.618-0.695,0.887l-6.562,6.51C10.125,17.229,9.875,17.229,9.719,17.073 M6.388,3.61C5.379,3.61,4.431,4,3.717,4.707C2.495,5.92,2.259,7.794,3.145,9.265c0.158,0.265,0.351,0.51,0.574,0.731L10,16.228l6.281-6.232c0.224-0.221,0.416-0.466,0.573-0.729c0.887-1.472,0.651-3.346-0.571-4.56C15.57,4,14.621,3.61,13.612,3.61c-1.43,0-2.639,0.786-3.268,1.863c-0.154,0.264-0.536,0.264-0.69,0C9.029,4.397,7.82,3.61,6.388,3.61"></path>
+						</svg> ONLINE LIVE EDITOR TOOL</a>
+       </div>
+  </div>       
+   
+   
+   <div class="disclimer"><em>Note: this is not an official material of <a href="https://splitcam.com/" target="_blank">SplitCam Software</a><br>I / (Dan N), act as 3rd party freelancer, I'm not part of SplitCam Software (and all its entity/ website, company, development staff) and I am not paid by their service so if you have issue, questions or feedback for/with mentioned sofware, please contact their support and assistance.<br>I can offer support or assistance only for what I post here and limited by my experience as web/graphic designer.</em></div>    
+       
+  </div>
+  
+  
+  
+  
+ <div class="totop"><a class="button" href="#"><svg class="svg-icon-top" viewBox="0 0 20 20">
+							<path d="M13.889,11.611c-0.17,0.17-0.443,0.17-0.612,0l-3.189-3.187l-3.363,3.36c-0.171,0.171-0.441,0.171-0.612,0c-0.172-0.169-0.172-0.443,0-0.611l3.667-3.669c0.17-0.17,0.445-0.172,0.614,0l3.496,3.493C14.058,11.167,14.061,11.443,13.889,11.611 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.692-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.383,10c0-4.07-3.312-7.382-7.383-7.382S2.618,5.93,2.618,10S5.93,17.381,10,17.381S17.383,14.07,17.383,10"></path>
+						</svg></a></div> 
+  
+  
+  <div id="footer">
+   <div class="fobox">
+   
+     <div class="footersection">
+     <p><strong>You may also be interested in:</strong></p>
+          <div class="links_footer">
+            <a href="https://camgirl.cloud/support/forum/download/splitcam/" target="_blank">SplitCam Overlays</a>
+            <a href="https://camgirl.cloud/editor/" target="_blank">Camgirl Live Editor</a>
+            <a href="https://dandesign.camgirl.cloud/blog/" target="_blank">Dan's Blog</a>
+            <a href="https://github.com/cssmfc/camgirl-splitcam/discussions" target="_blank">Discussions</a>
+          </div>
+      </div>
+   </div>
+   
+   <div class="fobox"><div class="footersection">
+     <p><strong>Social Links:</strong></p>
+          <div class="links_footer">
+            <a href="https://twitter.com/CamgirlCloud" target="_blank"><svg class="svg-icon-socials" viewBox="0 0 20 20">
+							<path fill="none" d="M14.467,6.707c-0.34,0.198-0.715,0.342-1.115,0.419c-0.318-0.335-0.775-0.545-1.279-0.545c-0.969,0-1.754,0.773-1.754,1.727c0,0.135,0.015,0.267,0.045,0.394C8.905,8.628,7.612,7.94,6.747,6.896C6.596,7.151,6.509,7.448,6.509,7.764c0,0.599,0.31,1.128,0.78,1.438C7.002,9.192,6.732,9.115,6.495,8.985c0,0.007,0,0.014,0,0.021c0,0.837,0.605,1.535,1.408,1.694c-0.147,0.04-0.302,0.06-0.462,0.06c-0.113,0-0.223-0.011-0.33-0.031c0.223,0.687,0.871,1.186,1.638,1.199c-0.6,0.464-1.356,0.739-2.179,0.739c-0.142,0-0.281-0.007-0.418-0.023c0.777,0.489,1.699,0.775,2.689,0.775c3.228,0,4.991-2.63,4.991-4.913c0-0.075-0.002-0.149-0.004-0.223c0.342-0.244,0.639-0.547,0.875-0.894c-0.316,0.137-0.652,0.23-1.008,0.272C14.057,7.448,14.336,7.11,14.467,6.707 M10,0.594c-5.195,0-9.406,4.211-9.406,9.406c0,5.195,4.211,9.406,9.406,9.406c5.196,0,9.407-4.211,9.407-9.406C19.406,4.805,15.195,0.594,10,0.594 M10,18.552c-4.723,0-8.551-3.829-8.551-8.552S5.277,1.449,10,1.449c4.723,0,8.551,3.829,8.551,8.551S14.723,18.552,10,18.552"></path>
+						</svg> Follow on Twitter</a>
+            <a href="https://www.youtube.com/c/CamgirlLiveEditor" target="_blank"><svg class="svg-icon-socials" viewBox="0 0 20 20">
+							<path fill="none" d="M9.62,8.236h0.179c0.396,0,0.716-0.318,0.716-0.711V6.368c0-0.393-0.32-0.711-0.716-0.711H9.62c-0.396,0-0.716,0.318-0.716,0.711v1.157C8.904,7.917,9.224,8.236,9.62,8.236 M9.44,6.324c0-0.147,0.121-0.267,0.269-0.267c0.148,0,0.269,0.12,0.269,0.267v1.245c0,0.147-0.12,0.267-0.269,0.267c-0.148,0-0.269-0.12-0.269-0.267V6.324z M11.41,8.236c0.357,0,0.671-0.312,0.671-0.312v0.267h0.537V5.657h-0.537v1.957c0,0-0.18,0.222-0.358,0.222c-0.18,0-0.18-0.134-0.18-0.134V5.657h-0.536V7.88C11.007,7.88,11.052,8.236,11.41,8.236 M7.517,8.191h0.626V6.812l0.716-1.957H8.277L7.83,6.146l-0.447-1.29H6.756l0.76,1.957V8.191z M11.052,11.139c-0.116,0-0.207,0.068-0.269,0.135v1.794c0.057,0.061,0.141,0.119,0.269,0.119c0.269,0,0.269-0.299,0.269-0.299v-1.451C11.32,11.437,11.275,11.139,11.052,11.139 M10,0.469c-5.264,0-9.531,4.267-9.531,9.531c0,5.264,4.267,9.531,9.531,9.531c5.264,0,9.531-4.268,9.531-9.531C19.531,4.736,15.264,0.469,10,0.469 M10,18.665c-4.786,0-8.665-3.879-8.665-8.665c0-4.785,3.879-8.665,8.665-8.665c4.786,0,8.665,3.88,8.665,8.665C18.665,14.786,14.786,18.665,10,18.665 M13.289,8.792c0,0-1.642-0.085-3.289-0.085c-1.642,0-3.289,0.085-3.289,0.085c-0.742,0-1.343,0.573-1.343,1.28c0,0-0.134,0.831-0.134,1.664c0,0.831,0.134,1.664,0.134,1.664c0,0.708,0.601,1.28,1.343,1.28c0,0,1.616,0.086,3.289,0.086c1.615,0,3.289-0.086,3.289-0.086c0.741,0,1.343-0.572,1.343-1.28c0,0,0.134-0.84,0.134-1.664c0-0.84-0.134-1.664-0.134-1.664C14.632,9.365,14.03,8.792,13.289,8.792 M8.054,10.242H7.382v3.372H6.756v-3.372H6.084V9.688h1.969V10.242z M9.754,13.614H9.217v-0.257c0,0-0.313,0.299-0.671,0.299c-0.357,0-0.402-0.342-0.402-0.342v-2.646H8.68v2.475c0,0,0,0.129,0.179,0.129c0.179,0,0.358-0.214,0.358-0.214v-2.39h0.537V13.614z M11.856,12.974c0,0,0,0.683-0.491,0.683c-0.302,0-0.485-0.16-0.583-0.283v0.241h-0.581V9.688h0.581v1.273c0.089-0.094,0.308-0.292,0.583-0.292c0.357,0,0.491,0.298,0.491,0.683V12.974z M13.96,11.395v0.854h-1.118v0.64c0,0,0,0.299,0.268,0.299c0.27,0,0.27-0.299,0.27-0.299v-0.299h0.581v0.47c0,0-0.09,0.598-0.805,0.598c-0.717,0-0.851-0.598-0.851-0.598v-1.664c0,0,0-0.726,0.851-0.726C14.005,10.669,13.96,11.395,13.96,11.395 M13.109,11.139c-0.268,0-0.268,0.298-0.268,0.298v0.384h0.537v-0.384C13.379,11.437,13.379,11.139,13.109,11.139"></path>
+						</svg> Subscribe to YouTube</a>
+            <a href="https://www.reddit.com/r/CamgirlLiveEditor/" target="_blank"><svg class="svg-icon-socials" viewBox="0 0 20 20">
+							<path fill="none" d="M16.85,7.275l-3.967-0.577l-1.773-3.593c-0.208-0.423-0.639-0.69-1.11-0.69s-0.902,0.267-1.11,0.69L7.116,6.699L3.148,7.275c-0.466,0.068-0.854,0.394-1,0.842c-0.145,0.448-0.023,0.941,0.314,1.27l2.871,2.799l-0.677,3.951c-0.08,0.464,0.112,0.934,0.493,1.211c0.217,0.156,0.472,0.236,0.728,0.236c0.197,0,0.396-0.048,0.577-0.143l3.547-1.864l3.548,1.864c0.18,0.095,0.381,0.143,0.576,0.143c0.256,0,0.512-0.08,0.729-0.236c0.381-0.277,0.572-0.747,0.492-1.211l-0.678-3.951l2.871-2.799c0.338-0.329,0.459-0.821,0.314-1.27C17.705,7.669,17.316,7.343,16.85,7.275z M13.336,11.754l0.787,4.591l-4.124-2.167l-4.124,2.167l0.788-4.591L3.326,8.5l4.612-0.67l2.062-4.177l2.062,4.177l4.613,0.67L13.336,11.754z"></path>
+						</svg> CGC on Reddit</a>
+            <a href="https://www.instagram.com/camgirl.cloud/" target="_blank"><svg class="svg-icon-socials" viewBox="0 0 20 20">
+							<path fill="none" d="M9.969,0.594c-5.195,0-9.406,4.211-9.406,9.406c0,5.195,4.211,9.406,9.406,9.406c5.195,0,9.406-4.211,9.406-9.406C19.375,4.805,15.164,0.594,9.969,0.594 M9.969,18.552c-4.723,0-8.551-3.829-8.551-8.552s3.829-8.551,8.551-8.551S18.521,5.277,18.521,10S14.691,18.552,9.969,18.552 M12.534,5.724H7.403c-0.944,0-1.71,0.766-1.71,1.71v5.131c0,0.944,0.766,1.71,1.71,1.71h5.131c0.944,0,1.71-0.766,1.71-1.71V7.435C14.244,6.49,13.479,5.724,12.534,5.724M11.679,7.007h1.283V8.29h-1.283V7.007z M9.969,8.29c0.944,0,1.71,0.766,1.71,1.71s-0.766,1.71-1.71,1.71s-1.71-0.766-1.71-1.71S9.024,8.29,9.969,8.29 M13.39,12.565c0,0.472-0.384,0.854-0.855,0.854H7.403c-0.472,0-0.855-0.383-0.855-0.854V9.573h0.898C7.423,9.712,7.403,9.854,7.403,10c0,1.417,1.149,2.565,2.565,2.565c1.416,0,2.565-1.148,2.565-2.565c0-0.146-0.02-0.288-0.043-0.427h0.898V12.565z"></path>
+						</svg> CGC on Instagram</a>
+          </div>
+      </div>
+   </div>
+   
+   <div class="foboxcenter"><p>by Dan N from camgirl.cloud</p></div>
+  </div>
+  
+</div>
+
+
+</div>
+</body>
+</html>
