@@ -1,0 +1,438 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Congratulation - Overlay</title>
+<style>
+body{margin:0 auto;width:100%;height:100vw;overflow:hidden;}
+#container{display:block;width:100%;height:100vh;box-sizing:border-box;margin:0 auto;}
+#flakes_1{display:block;width:50%;height:100vh;float:left;box-sizing:border-box;position:absolute;top:-70px;left:0;}
+#flakes_2{display:block;width:50%;height:100vh;float:left;box-sizing:border-box;position:absolute;top:-70px;right:0;transform:rotateY(180deg);}
+
+.rotateleft{transform:rotate(30deg);animation: RotateLeft 5s infinite;}
+.rotateright{transform:rotate(-70deg);animation: RotateRight 5s infinite;}
+
+@keyframes RotateLeft {
+    0% {transform:rotate(30deg);opacity:1;}
+	100% {transform:rotate(-70deg);  opacity:0;}
+	}
+	
+@keyframes RotateRight {
+    0% {transform:rotate(-70deg);opacity:1;}
+	100% {transform:rotate(70deg);  opacity:0;}
+	}	
+
+#flakes_1 span:nth-child(1){display:block;width:15px;height:10px;background-color:#F63;position:absolute;top:10%;left:-2%;transform:translate(0%,0%);animation: ConfettiOne 5s infinite;}
+#flakes_1 span:nth-child(2){display:block;width:15px;height:10px;background-color:#09C;position:absolute;top:13%;left:-2%;transform:translate(0%,0%);animation: ConfettiOne 4s infinite;}
+#flakes_1 span:nth-child(3){display:block;width:15px;height:10px;background-color:#F63;position:absolute;top:11%;left:-2%;transform:translate(0%,0%);animation: ConfettiOne 5s infinite;}
+#flakes_1 span:nth-child(4){display:block;width:15px;height:10px;background-color:#3C3;position:absolute;top:14%;left:-3%;transform:translate(0%,0%);animation: ConfettiOne 3s infinite;}
+#flakes_1 span:nth-child(5){display:block;width:15px;height:10px;background-color:#F63;position:absolute;top:15%;left:-2%;transform:translate(0%,0%);animation: ConfettiOne 4s infinite;}
+#flakes_1 span:nth-child(6){display:block;width:15px;height:10px;background-color:#F93;position:absolute;top:12%;left:-3%;transform:translate(0%,0%);animation: ConfettiOne 5s infinite;}
+#flakes_1 span:nth-child(7){display:block;width:15px;height:10px;background-color:#CC0;position:absolute;top:10%;left:-2%;transform:translate(0%,0%);animation: ConfettiOne 3s infinite;}
+#flakes_1 span:nth-child(8){display:block;width:15px;height:10px;background-color:#F3C;position:absolute;top:12%;left:-3%;transform:translate(0%,0%);animation: ConfettiOne 4s infinite;}
+#flakes_1 span:nth-child(9){display:block;width:15px;height:10px;background-color:#F63;position:absolute;top:16%;left:-2%;transform:translate(0%,0%);animation: ConfettiOne 5s infinite;}
+#flakes_1 span:nth-child(10){display:block;width:15px;height:10px;background-color:#F00;position:absolute;top:13%;left:-3%;transform:translate(0%,0%);animation: ConfettiOne 3s infinite;}
+
+
+#flakes_1 span:nth-child(11){display:block;width:10px;height:10px;background-color:#F63;position:absolute;top:10%;left:-7%;transform:translate(0%,0%);animation: ConfettiTwo 6s infinite;}
+#flakes_1 span:nth-child(12){display:block;width:10px;height:10px;background-color:#09C;position:absolute;top:13%;left:-4%;transform:translate(0%,0%);animation: ConfettiTwo 7s infinite;}
+#flakes_1 span:nth-child(13){display:block;width:10px;height:10px;background-color:#F63;position:absolute;top:11%;left:-6%;transform:translate(0%,0%);animation: ConfettiTwo 5s infinite;}
+#flakes_1 span:nth-child(14){display:block;width:10px;height:10px;background-color:#3C3;position:absolute;top:14%;left:-3%;transform:translate(0%,0%);animation: ConfettiTwo 6s infinite;}
+#flakes_1 span:nth-child(15){display:block;width:10px;height:10px;background-color:#F63;position:absolute;top:15%;left:-6%;transform:translate(0%,0%);animation: ConfettiTwo 4s infinite;}
+#flakes_1 span:nth-child(16){display:block;width:10px;height:10px;background-color:#F93;position:absolute;top:12%;left:-5%;transform:translate(0%,0%);animation: ConfettiTwo 4s infinite;}
+#flakes_1 span:nth-child(17){display:block;width:10px;height:10px;background-color:#CC0;position:absolute;top:10%;left:-8%;transform:translate(0%,0%);animation: ConfettiTwo 7s infinite;}
+#flakes_1 span:nth-child(18){display:block;width:10px;height:10px;background-color:#F3C;position:absolute;top:12%;left:-5%;transform:translate(0%,0%);animation: ConfettiTwo 5s infinite;}
+#flakes_1 span:nth-child(19){display:block;width:10px;height:10px;background-color:#F63;position:absolute;top:16%;left:-4%;transform:translate(0%,0%);animation: ConfettiTwo 6s infinite;}
+#flakes_1 span:nth-child(20){display:block;width:10px;height:10px;background-color:#F00;position:absolute;top:13%;left:-9%;transform:translate(0%,0%);animation: ConfettiTwo 7s infinite;}
+
+
+#flakes_1 span:nth-child(21){display:block;width:10px;height:10px;background-color:#F63;position:absolute;top:10%;left:-7%;transform:translate(0%,0%);animation: ConfettiThree 5s infinite;}
+#flakes_1 span:nth-child(22){display:block;width:10px;height:10px;background-color:#09C;position:absolute;top:13%;left:-4%;transform:translate(0%,0%);animation: ConfettiThree 3s infinite;}
+#flakes_1 span:nth-child(23){display:block;width:10px;height:10px;background-color:#F63;position:absolute;top:11%;left:-6%;transform:translate(0%,0%);animation: ConfettiThree 4s infinite;}
+#flakes_1 span:nth-child(24){display:block;width:10px;height:10px;background-color:#3C3;position:absolute;top:14%;left:-3%;transform:translate(0%,0%);animation: ConfettiThree 5s infinite;}
+#flakes_1 span:nth-child(25){display:block;width:10px;height:10px;background-color:#F63;position:absolute;top:15%;left:-6%;transform:translate(0%,0%);animation: ConfettiThree 7s infinite;}
+#flakes_1 span:nth-child(26){display:block;width:10px;height:10px;background-color:#F93;position:absolute;top:12%;left:-5%;transform:translate(0%,0%);animation: ConfettiThree 6s infinite;}
+#flakes_1 span:nth-child(27){display:block;width:10px;height:10px;background-color:#CC0;position:absolute;top:10%;left:-8%;transform:translate(0%,0%);animation: ConfettiThree 4s infinite;}
+#flakes_1 span:nth-child(28){display:block;width:10px;height:10px;background-color:#F3C;position:absolute;top:12%;left:-5%;transform:translate(0%,0%);animation: ConfettiThree 7s infinite;}
+#flakes_1 span:nth-child(29){display:block;width:10px;height:10px;background-color:#F63;position:absolute;top:16%;left:-4%;transform:translate(0%,0%);animation: ConfettiThree 5s infinite;}
+#flakes_1 span:nth-child(30){display:block;width:10px;height:10px;background-color:#F00;position:absolute;top:13%;left:-9%;transform:translate(0%,0%);animation: ConfettiThree 4s infinite;}
+
+
+
+
+
+
+@keyframes ConfettiOne {
+    0% {transform:translate(-70px,200px) rotate(90deg) skew(-3deg,40deg); opacity:1;}
+	90% {transform:translate(990px,550px) rotate(360deg) skew(13deg,20deg);  opacity:1;}
+	100% {transform:translate(990px,550px) rotate(366deg) skew(13deg,20deg);  opacity:0;}
+	}
+	
+@keyframes ConfettiTwo {
+    0% {transform:translate(-70px,200px) rotate(-90deg) skew(-3deg,10deg); opacity:1;}
+	90% {transform:translate(790px,550px) rotate(60deg) skew(13deg,2deg);  opacity:1;}
+	100% {transform:translate(790px,550px) rotate(65deg) skew(13deg,2deg);  opacity:0;}
+	}	
+@keyframes ConfettiThree {
+    0% {transform:translate(-78px,250px) rotate(-90deg) skew(-3deg,10deg); opacity:1;}
+	90% {transform:translate(590px,510px) rotate(60deg) skew(13deg,2deg);  opacity:1;}
+	100% {transform:translate(590px,510px) rotate(62deg) skew(13deg,2deg);  opacity:0;}
+	}
+	
+	
+	
+
+
+
+#flakes_2 span:nth-child(1){display:block;width:15px;height:10px;background-color:#F63;position:absolute;top:10%;left:-2%;transform:translate(0%,0%);animation: AConfettiOne 5s infinite;}
+#flakes_2 span:nth-child(2){display:block;width:15px;height:10px;background-color:#09C;position:absolute;top:13%;left:-2%;transform:translate(0%,0%);animation: AConfettiOne 4s infinite;}
+#flakes_2 span:nth-child(3){display:block;width:15px;height:10px;background-color:#F63;position:absolute;top:11%;left:-2%;transform:translate(0%,0%);animation: AConfettiOne 5s infinite;}
+#flakes_2 span:nth-child(4){display:block;width:15px;height:10px;background-color:#3C3;position:absolute;top:14%;left:-3%;transform:translate(0%,0%);animation: AConfettiOne 3s infinite;}
+#flakes_2 span:nth-child(5){display:block;width:15px;height:10px;background-color:#F63;position:absolute;top:15%;left:-2%;transform:translate(0%,0%);animation: AConfettiOne 4s infinite;}
+#flakes_2 span:nth-child(6){display:block;width:15px;height:10px;background-color:#F93;position:absolute;top:12%;left:-3%;transform:translate(0%,0%);animation: AConfettiOne 5s infinite;}
+#flakes_2 span:nth-child(7){display:block;width:15px;height:10px;background-color:#CC0;position:absolute;top:10%;left:-2%;transform:translate(0%,0%);animation: AConfettiOne 3s infinite;}
+#flakes_2 span:nth-child(8){display:block;width:15px;height:10px;background-color:#F3C;position:absolute;top:12%;left:-3%;transform:translate(0%,0%);animation: AConfettiOne 4s infinite;}
+#flakes_2 span:nth-child(9){display:block;width:15px;height:10px;background-color:#F63;position:absolute;top:16%;left:-2%;transform:translate(0%,0%);animation: AConfettiOne 5s infinite;}
+#flakes_2 span:nth-child(10){display:block;width:15px;height:10px;background-color:#F00;position:absolute;top:13%;left:-3%;transform:translate(0%,0%);animation:AConfettiOne 3s infinite;}
+
+
+#flakes_2 span:nth-child(11){display:block;width:10px;height:10px;background-color:#F63;position:absolute;top:10%;left:-7%;transform:translate(0%,0%);animation: BConfettiTwo 6.8s infinite;}
+#flakes_2 span:nth-child(12){display:block;width:10px;height:10px;background-color:#09C;position:absolute;top:13%;left:-4%;transform:translate(0%,0%);animation: BConfettiTwo 7.2s infinite;}
+#flakes_2 span:nth-child(13){display:block;width:10px;height:10px;background-color:#F63;position:absolute;top:11%;left:-6%;transform:translate(0%,0%);animation: BConfettiTwo 4.5s infinite;}
+#flakes_2 span:nth-child(14){display:block;width:10px;height:10px;background-color:#3C3;position:absolute;top:14%;left:-3%;transform:translate(0%,0%);animation: BConfettiTwo 6.2s infinite;}
+#flakes_2 span:nth-child(15){display:block;width:10px;height:10px;background-color:#F63;position:absolute;top:15%;left:-6%;transform:translate(0%,0%);animation: BConfettiTwo 5.3s infinite;}
+#flakes_2 span:nth-child(16){display:block;width:10px;height:10px;background-color:#F93;position:absolute;top:12%;left:-5%;transform:translate(0%,0%);animation: BConfettiTwo 5.8s infinite;}
+#flakes_2 span:nth-child(17){display:block;width:10px;height:10px;background-color:#CC0;position:absolute;top:10%;left:-8%;transform:translate(0%,0%);animation: BConfettiTwo 7.4s infinite;}
+#flakes_2 span:nth-child(18){display:block;width:10px;height:10px;background-color:#F3C;position:absolute;top:12%;left:-5%;transform:translate(0%,0%);animation: BConfettiTwo 6.2s infinite;}
+#flakes_2 span:nth-child(19){display:block;width:10px;height:10px;background-color:#F63;position:absolute;top:16%;left:-4%;transform:translate(0%,0%);animation: BConfettiTwo 5.3s infinite;}
+#flakes_2 span:nth-child(20){display:block;width:10px;height:10px;background-color:#F00;position:absolute;top:13%;left:-9%;transform:translate(0%,0%);animation: BConfettiTwo 7.7s infinite;}
+
+
+#flakes_2 span:nth-child(21){display:block;width:10px;height:10px;background-color:#F63;position:absolute;top:10%;left:-7%;transform:translate(0%,0%);animation: CConfettiThree 5s infinite;}
+#flakes_2 span:nth-child(22){display:block;width:10px;height:10px;background-color:#09C;position:absolute;top:13%;left:-4%;transform:translate(0%,0%);animation: CConfettiThree 3s infinite;}
+#flakes_2 span:nth-child(23){display:block;width:10px;height:10px;background-color:#F63;position:absolute;top:11%;left:-6%;transform:translate(0%,0%);animation: CConfettiThree 4s infinite;}
+#flakes_2 span:nth-child(24){display:block;width:10px;height:10px;background-color:#3C3;position:absolute;top:14%;left:-3%;transform:translate(0%,0%);animation: 2ConfettiThree 5s infinite;}
+#flakes_2 span:nth-child(25){display:block;width:10px;height:10px;background-color:#F63;position:absolute;top:15%;left:-6%;transform:translate(0%,0%);animation: CConfettiThree 7s infinite;}
+#flakes_2 span:nth-child(26){display:block;width:10px;height:10px;background-color:#F93;position:absolute;top:12%;left:-5%;transform:translate(0%,0%);animation: CConfettiThree 6s infinite;}
+#flakes_2 span:nth-child(27){display:block;width:10px;height:10px;background-color:#CC0;position:absolute;top:10%;left:-8%;transform:translate(0%,0%);animation: CConfettiThree 4s infinite;}
+#flakes_2 span:nth-child(28){display:block;width:10px;height:10px;background-color:#F3C;position:absolute;top:12%;left:-5%;transform:translate(0%,0%);animation: CConfettiThree 7s infinite;}
+#flakes_2 span:nth-child(29){display:block;width:10px;height:10px;background-color:#F63;position:absolute;top:16%;left:-4%;transform:translate(0%,0%);animation: CConfettiThree 5s infinite;}
+#flakes_2 span:nth-child(30){display:block;width:10px;height:10px;background-color:#F00;position:absolute;top:13%;left:-9%;transform:translate(0%,0%);animation: CConfettiThree 4s infinite;}
+
+
+
+@keyframes AConfettiOne {
+    0% {transform:translate(-70px,210px) rotate(-90deg) skew(-3deg,20deg); opacity:1;}
+	90% {transform:translate(990px,540px) rotate(60deg) skew(13deg,40deg);  opacity:1;}
+	100% {transform:translate(990px,560px) rotate(-15deg) skew(23deg,20deg);  opacity:0;}
+	}
+	
+@keyframes BConfettiTwo {
+    0% {transform:translate(-70px,220px) rotate(-90deg) skew(-3deg,10deg); opacity:1;}
+	90% {transform:translate(790px,540px) rotate(10deg) skew(23deg,12deg);  opacity:1;}
+	100% {transform:translate(790px,555px) rotate(95deg) skew(3deg,17deg);  opacity:0;}
+	}	
+@keyframes CConfettiThree {
+    0% {transform:translate(-78px,260px) rotate(-90deg) skew(3deg,-10deg); opacity:1;}
+	90% {transform:translate(590px,515px) rotate(10deg) skew(-13deg,12deg);  opacity:1;}
+	100% {transform:translate(590px,530px) rotate(42deg) skew(3deg,9deg);  opacity:0;}
+	}
+	
+	
+	
+.snowflake_3{display:block;width:10px;height:10px;background-color:#fff;position:fixed;top:-4%;left:9%;animation:infinite 3s Falling;}
+.snowflake_4{display:block;width:10px;height:10px;background-color:#fff;position:fixed;top:-2%;left:11%;animation:infinite 5s Falling;}
+.snowflake_5{display:block;width:7px;height:7px;background-color:#fff;position:fixed;top:-2%;left:3%;animation:infinite 4s fallingSnow2;}
+.snowflake_6{display:block;width:4px;height:4px;background-color:#fff;position:fixed;top:2%;left:11%;animation:infinite 6s fallingSnow2;}
+.snowflake_7{display:block;width:7px;height:7px;background-color:#fff;position:fixed;top:-2%;left:3%;animation:infinite 5s fallingSnow;}
+.snowflake_8{display:block;width:9px;height:9px;background-color:#fff;position:fixed;top:1%;left:5%;animation:infinite 8s fallingSnow2;}
+
+.snowflake_9{display:block;width:5px;height:5px;background-color:#fff;position:fixed;top:-4%;left:19%;animation:infinite 8s Falling;}
+.snowflake_10{display:block;width:10px;height:10px;background-color:#fff;position:fixed;top:-2%;left:14%;animation:infinite 9s fallingSnow2;}
+.snowflake_11{display:block;width:7px;height:7px;background-color:#fff;position:fixed;top:-5%;left:13%;animation:infinite 10s fallingSnow;}
+.snowflake_12{display:block;width:4px;height:4px;background-color:#fff;position:fixed;top:6%;left:11%;animation:infinite 11s Falling;}
+.snowflake_13{display:block;width:7px;height:7px;background-color:#fff;position:fixed;top:-3%;left:16%;animation:infinite 17s fallingSnow;}
+.snowflake_14{display:block;width:9px;height:9px;background-color:#fff;position:fixed;top:1%;left:15%;animation:infinite 14s fallingSnow2;}
+
+
+.snowflake_15{display:block;width:5px;height:5px;background-color:#fff;position:fixed;top:-4%;left:29%;animation:infinite 8s Falling;}
+.snowflake_16{display:block;width:10px;height:10px;background-color:#fff;position:fixed;top:-2%;left:24%;animation:infinite 9s fallingSnow2;}
+.snowflake_17{display:block;width:7px;height:7px;background-color:#fff;position:fixed;top:-5%;left:23%;animation:infinite 10s fallingSnow;}
+.snowflake_18{display:block;width:4px;height:4px;background-color:#fff;position:fixed;top:-6%;left:21%;animation:infinite 11s Falling;}
+.snowflake_19{display:block;width:7px;height:7px;background-color:#fff;position:fixed;top:-3%;left:26%;animation:infinite 17s fallingSnow2;}
+.snowflake_20{display:block;width:9px;height:9px;background-color:#fff;position:fixed;top:-2%;left:25%;animation:infinite 14s Falling;}
+
+.snowflake_21{display:block;width:5px;height:5px;background-color:#fff;position:fixed;top:-5%;left:39%;animation:infinite 11s Falling;}
+.snowflake_22{display:block;width:10px;height:10px;background-color:#fff;position:fixed;top:-4%;left:34%;animation:infinite 9s fallingSnow2;}
+.snowflake_23{display:block;width:7px;height:7px;background-color:#fff;position:fixed;top:-6%;left:33%;animation:infinite 17s fallingSnow;}
+.snowflake_24{display:block;width:4px;height:4px;background-color:#fff;position:fixed;top:-7%;left:31%;animation:infinite 11s Falling;}
+.snowflake_25{display:block;width:7px;height:7px;background-color:#fff;position:fixed;top:-5%;left:36%;animation:infinite 17s fallingSnow2;}
+.snowflake_26{display:block;width:9px;height:9px;background-color:#fff;position:fixed;top:-4%;left:35%;animation:infinite 10s Falling;}
+
+.snowflake_27{display:block;width:5px;height:5px;background-color:#fff;position:fixed;top:-5%;left:49%;animation:infinite 9s Falling;}
+.snowflake_28{display:block;width:10px;height:10px;background-color:#fff;position:fixed;top:-4%;left:44%;animation:infinite 15s fallingSnow2;}
+.snowflake_29{display:block;width:7px;height:7px;background-color:#fff;position:fixed;top:-6%;left:43%;animation:infinite 13s fallingSnow;}
+.snowflake_30{display:block;width:4px;height:4px;background-color:#fff;position:fixed;top:-7%;left:41%;animation:infinite 20s Falling;}
+.snowflake_31{display:block;width:7px;height:7px;background-color:#fff;position:fixed;top:-5%;left:46%;animation:infinite 15s flake2;}
+.snowflake_32{display:block;width:9px;height:9px;background-color:#fff;position:fixed;top:-4%;left:45%;animation:infinite 16s Falling;}
+
+.snowflake_33{display:block;width:10px;height:10px;background-color:#fff;position:fixed;top:-4%;left:49%;animation:infinite 3s Falling;}
+.snowflake_34{display:block;width:10px;height:10px;background-color:#fff;position:fixed;top:-2%;left:51%;animation:infinite 5s Falling;}
+.snowflake_35{display:block;width:7px;height:7px;background-color:#fff;position:fixed;top:-2%;left:53%;animation:infinite 4s fallingSnow2;}
+.snowflake_36{display:block;width:4px;height:4px;background-color:#fff;position:fixed;top:2%;left:54%;animation:infinite 6s fallingSnow2;}
+.snowflake_37{display:block;width:7px;height:7px;background-color:#fff;position:fixed;top:-2%;left:58%;animation:infinite 5s fallingSnow;}
+.snowflake_38{display:block;width:9px;height:9px;background-color:#fff;position:fixed;top:1%;left:60%;animation:infinite 8s fallingSnow2;}
+
+
+
+.snowflake_39{display:block;width:10px;height:10px;background-color:#fff;position:fixed;top:-4%;left:59%;animation:infinite 7s Falling;}
+.snowflake_40{display:block;width:10px;height:10px;background-color:#fff;position:fixed;top:-2%;left:61%;animation:infinite 11s Falling;}
+.snowflake_41{display:block;width:7px;height:7px;background-color:#fff;position:fixed;top:-2%;left:63%;animation:infinite 14s fallingSnow2;}
+.snowflake_42{display:block;width:4px;height:4px;background-color:#fff;position:fixed;top:2%;left:69%;animation:infinite 6s flake3;}
+.snowflake_43{display:block;width:7px;height:7px;background-color:#fff;position:fixed;top:-2%;left:75%;animation:infinite 9s fallingSnow;}
+.snowflake_44{display:block;width:9px;height:9px;background-color:#fff;position:fixed;top:1%;left:66%;animation:infinite 18s fallingSnow2;}
+
+
+.snowflake_45{display:block;width:10px;height:10px;background-color:#fff;position:fixed;top:-4%;left:69%;animation:infinite 11s flake3;}
+.snowflake_46{display:block;width:10px;height:10px;background-color:#fff;position:fixed;top:-2%;left:71%;animation:infinite 6s Falling;}
+.snowflake_47{display:block;width:7px;height:7px;background-color:#fff;position:fixed;top:-2%;left:79%;animation:infinite 15s fallingSnow2;}
+.snowflake_48{display:block;width:4px;height:4px;background-color:#fff;position:fixed;top:2%;left:74%;animation:infinite 7s flake3;}
+.snowflake_49{display:block;width:7px;height:7px;background-color:#fff;position:fixed;top:-2%;left:85%;animation:infinite 13s fallingSnow;}
+.snowflake_50{display:block;width:9px;height:9px;background-color:#fff;position:fixed;top:1%;left:80%;animation:infinite 9s fallingSnow2;}
+
+
+.snowflake_51{display:block;width:10px;height:10px;background-color:#fff;position:fixed;top:-4%;left:89%;animation:infinite 7s flake3;}
+.snowflake_52{display:block;width:10px;height:10px;background-color:#fff;position:fixed;top:-2%;left:81%;animation:infinite 16s Falling;}
+.snowflake_53{display:block;width:7px;height:7px;background-color:#fff;position:fixed;top:-2%;left:85%;animation:infinite 10s fallingSnow;}
+.snowflake_54{display:block;width:4px;height:4px;background-color:#fff;position:fixed;top:2%;left:74%;animation:infinite 17s flake3;}
+.snowflake_55{display:block;width:7px;height:7px;background-color:#fff;position:fixed;top:-2%;left:95%;animation:infinite 9s fallingSnow2;}
+.snowflake_56{display:block;width:9px;height:9px;background-color:#fff;position:fixed;top:1%;left:90%;animation:infinite 11s flake2;}
+.snowflake_57{display:block;width:10px;height:10px;background-color:#fff;position:fixed;top:-4%;left:99%;animation:infinite 8s flake3;}
+.snowflake_58{display:block;width:10px;height:10px;background-color:#fff;position:fixed;top:-2%;left:91%;animation:infinite 16s Falling;}
+.snowflake_59{display:block;width:7px;height:7px;background-color:#fff;position:fixed;top:-2%;left:95%;animation:infinite 7s fallingSnow2;}
+.snowflake_60{display:block;width:4px;height:4px;background-color:#fff;position:fixed;top:2%;left:74%;animation:infinite 13s flake3;}
+.snowflake_61{display:block;width:7px;height:7px;background-color:#fff;position:fixed;top:-2%;left:85%;animation:infinite 19s fallingSnow;}
+.snowflake_62{display:block;width:9px;height:9px;background-color:#fff;position:fixed;top:1%;left:84%;animation:infinite 7s fallingSnow2;}	
+	
+@keyframes fallingSnow2 {
+	from { top: -20%;opacity: .5;transform:rotate(-30deg) scale(0.5);}
+	to { top: 100%;opacity: 1;transform:rotate(80deg) scale(1);filter: drop-shadow(0 5px 0.65rem #FFF);}
+}
+
+
+@keyframes fallingSnow {
+	0% {opacity: 1;transform: translate(0%, 0%) rotateZ(0deg);}
+	75% {opacity: 1;transform: translate(5%, 70%) rotateZ(70deg);}
+	100% {opacity: 0;transform: translate(10%, 100%) rotateZ(360deg);}
+}
+@keyframes flake2 {
+	from { top: -30%;left:40%;opacity: .5;transform:rotate(-10deg) scale(0.5);}
+	80% { top: 80%;left:40%;opacity: .7;transform:rotate(160deg) scale(1);}
+	to { top: 100%;left:40%;opacity:.5;transform:rotate(380deg) scale(0.5);}
+}
+
+@keyframes flake3 {
+	from { top: -30%;left:80%;opacity: .5;transform:rotate(-10deg) scale(0.3);}
+	80% { top: 80%;left:80%;opacity: .7;transform:rotate(160deg) scale(0.5);}
+	to { top: 100%;left:80%;opacity:.5;transform:rotate(380deg) scale(0.3);}
+}
+@keyframes flake4 {
+	from { top: -30%;left:80%;opacity: .5;transform:rotate(-180deg) scale(0.5);}
+	80% { top: 80%;left:80%;opacity: .7;transform:rotate(160deg) scale(1);}
+	to { top: 100%;left:80%;opacity:.5;transform:rotate(380deg) scale(0.5);}
+}
+
+#snowflakeTwo{display:block;width:10px;height:10px;background-color:#fff;position:fixed;top:-3%;left:5%;animation:infinite 5s fallingSnow2;}
+@keyframes Falling {
+	from { top: -3%;opacity: .5;transform:rotate(-10deg);}
+	10% { top: 8%;opacity: .5;transform:rotate(-20deg);}
+	to { top: 100%;opacity: 1;transform:rotate(80deg);}
+}
+	
+#texted{display:block;width:80%;height:auto;text-align:center;padding:2em;position:absolute;top:20%;font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;font-size: calc(75px + 6 * ((100vw - 320px) / 680));color:#fff;font-weight:500;text-transform:uppercase;text-shadow:0 0 5px #000;transform:scale(.1);opacity:0;animation:ShowIt 7s; animation-iteration-count: infinite;animation-delay: 3s;}
+
+
+
+@keyframes ShowIt {
+	0% {opacity: 0;transform:rotate(-30deg) scale(0.5);}
+	50% {opacity: 1;transform:rotate(0deg) scale(1);filter: drop-shadow(0 5px 0.65rem #FFF);}
+	90% {opacity: 1;transform:rotate(0deg) scale(1);filter: drop-shadow(0 5px 0.65rem #FFF);}
+	100% {opacity:1;transform:rotate(0deg) scale(2);filter: drop-shadow(0 5px 0.65rem #FFF);}
+}
+
+</style>
+</head>
+
+<body>
+
+
+<div id="container">
+   
+   
+   
+   <span class="snowflake_27"></span>
+<span class="snowflake_28"></span>
+<span class="snowflake_29"></span>
+<span class="snowflake_30"></span>
+<span class="snowflake_31"></span>
+<span class="snowflake_32"></span>
+
+
+<span class="snowflake_33"></span>
+<span class="snowflake_34"></span>
+<span class="snowflake_35"></span>
+<span class="snowflake_36"></span>
+<span class="snowflake_37"></span>
+<span class="snowflake_38"></span>
+
+<span class="snowflake_39"></span>
+<span class="snowflake_40"></span>
+<span class="snowflake_41"></span>
+<span class="snowflake_42"></span>
+<span class="snowflake_43"></span>
+<span class="snowflake_44"></span>
+
+<span class="snowflake_45"></span>
+<span class="snowflake_46"></span>
+<span class="snowflake_47"></span>
+<span class="snowflake_48"></span>
+<span class="snowflake_49"></span>
+<span class="snowflake_50"></span>
+
+
+
+<span class="snowflake_51"></span>
+<span class="snowflake_52"></span>
+<span class="snowflake_53"></span>
+<span class="snowflake_54"></span>
+<span class="snowflake_55"></span>
+<span class="snowflake_56"></span>
+
+<span class="snowflake_57"></span>
+<span class="snowflake_58"></span>
+<span class="snowflake_59"></span>
+<span class="snowflake_60"></span>
+<span class="snowflake_61"></span>
+<span class="snowflake_62"></span>
+   
+   
+   
+   <div id="flakes_1" class="rotateleft">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+   </div>
+   
+   
+   
+   <div id="texted" contenteditable="true">Congratulation!</div>
+   
+   
+   
+    <div id="flakes_2" class="rotateright">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+   </div>
+
+
+
+
+
+
+<span class="snowflake_3"></span>
+<span class="snowflake_4"></span>
+<span class="snowflake_5"></span>
+<span class="snowflake_6"></span>
+<span class="snowflake_7"></span>
+<span class="snowflake_8"></span>
+
+<span class="snowflake_9"></span>
+<span class="snowflake_10"></span>
+<span class="snowflake_11"></span>
+<span class="snowflake_12"></span>
+<span class="snowflake_13"></span>
+<span class="snowflake_14"></span>
+
+<span class="snowflake_15"></span>
+<span class="snowflake_16"></span>
+<span class="snowflake_17"></span>
+<span class="snowflake_18"></span>
+<span class="snowflake_19"></span>
+<span class="snowflake_20"></span>
+
+<span class="snowflake_21"></span>
+<span class="snowflake_22"></span>
+<span class="snowflake_23"></span>
+<span class="snowflake_24"></span>
+<span class="snowflake_25"></span>
+<span class="snowflake_26"></span>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+</body>
+</html>
