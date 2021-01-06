@@ -2,6 +2,8 @@
 
 **custom SplitCam overlay for webcam performers**
 
+![Cover](https://raw.githubusercontent.com/cssmfc/camgirl-splitcam/main/assets/img/cover_mytipmenu_camgirlcloud-splitcam.jpg)
+
 Using SplitCam Software to add and display a custom overlay in your live stream
 
 ## Info
@@ -34,4 +36,4 @@ the important is the **file:///** prefix, make sure is there
 
 :desktop_computer: Online Demo | :open_file_folder: Download
 ------------ | -------------
-[HTML Page]() | [Zip File]()
+[HTML Page](https://cssmfc.github.io/camgirl-splitcam/demos/splitcam-mytipmenu-overlay/my-tip-menu.html) | [Zip File](https://cssmfc.github.io/camgirl-splitcam/demos/splitcam-mytipmenu-overlay/splitcam-mytipmenu-overlay.zip)
