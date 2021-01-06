@@ -27,10 +27,14 @@ I've made a short video and posted on [YouTube](https://www.youtube.com/watch?v=
 
 ## Troubleshooting
 **after adding the Browser source does't show up in streaming window of SplitCam**
+
 *click the html file to open it in your default browser and copy the full URL path from address bar*
+
 In Chrome browser the full URL path looks like this
 `file:///C:/Users/.../.../MyTipMenu-01.html`
+
 the important is the **file:///** prefix, make sure is there
+
 
 :left_speech_bubble: If you have suggestions, questions or feedback... post on [Discussions](https://github.com/cssmfc/camgirl-splitcam/discussions)
 
