@@ -35,7 +35,6 @@ In Chrome browser the full URL path looks like this
 
 the important is the **file:///** prefix, make sure is there
 
-
 :left_speech_bubble: If you have suggestions, questions or feedback... post on [Discussions](https://github.com/cssmfc/camgirl-splitcam/discussions)
 
 :desktop_computer: Online Demo | :open_file_folder: Download
