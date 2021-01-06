@@ -12,6 +12,7 @@
  * [My Tip Menu - SplitCam Overlay](https://github.com/cssmfc/camgirl-splitcam/blob/main/demos/splitcam-mytipmenu-overlay/README.md)
  * [Congratulation 2in1 - SplitCam Overlay](https://github.com/cssmfc/camgirl-splitcam/blob/main/demos/congrats-overlay/README.md)
 
-
+## Tutorials List
+ * [DMCA Overlay with image and animated editable text](https://cssmfc.github.io/camgirl-splitcam/tutorials/dmca-1.html)
 
 :left_speech_bubble: If you have suggestions, questions or feedback... post on [Discussions](https://github.com/cssmfc/camgirl-splitcam/discussions)
