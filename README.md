@@ -11,6 +11,7 @@
 
  * [My Tip Menu - SplitCam Overlay](https://github.com/cssmfc/camgirl-splitcam/blob/main/demos/splitcam-mytipmenu-overlay/README.md)
  * [Congratulation 2in1 - SplitCam Overlay](https://github.com/cssmfc/camgirl-splitcam/blob/main/demos/congrats-overlay/README.md)
+ * [Be Right Back - SplitCam / OBS Overlay](https://github.com/cssmfc/camgirl-splitcam/blob/main/demos/be-right-back-overlay/README.md)
 
 ## Tutorials List
  * [DMCA Overlay with image and animated editable text](https://cssmfc.github.io/camgirl-splitcam/tutorials/dmca-1.html)
