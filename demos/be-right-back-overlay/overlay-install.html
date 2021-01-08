@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Be right back and Top Tippers Overlay</title>
+<style>
+html{ scroll-behavior: smooth;}
+*{box-sizing:border-box;}
+body{width:90%;margin:0 auto;font-size: calc(15px + 6 * ((100vw - 320px) / 680));color:#033;padding:0;box-sizing:border-box;font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;background-color:#222222;
+background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%233C56d1' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");}
+#container{display:block;width:100%;height:auto;margin:3em auto 2em auto;background-color:#fff;border-radius:8px;}
+#header,#continut,#footer{display:block;width:100%;height:auto;margin:0 auto;}
+
+
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+.ripple:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.boxed{display:block;width:90%;height:auto;margin:10px auto 12px auto;}
+.boxed p{display:block;width:90%;height:auto;margin:0 auto 8px auto;font-size: calc(14px + 4 * ((100vw - 320px) / 680));text-align:left;font-weight:100;}
+
+.template{display:block;width:50%;height:auto;margin:0 auto;float:left;box-sizing:border-box;text-align:center;padding:0em 0em 1em;transition:all .4s;}
+.template p{display:block;width:90%;height:auto;margin:0 auto 8px auto;font-size: calc(14px + 4 * ((100vw - 320px) / 680));text-align:left;}
+.template img{display:block;width:99%;height:auto;margin:0 auto 12px auto;transition:all .4s;}
+.template:hover{background-color:#f1f1f1;}
+.template:hover img{transform:scale(.9);box-shadow:0 0 7px #999,0 5px 6px -4px #000;}
+.template a, .template a:visited{display:inline-block;padding:.3em 1em .3em;background-color:#26424A;text-decoration:none;color:#fff;border-radius:5px;font-size: calc(12px + 4 * ((100vw - 320px) / 680));font-weight:100;}
+.template a:hover{background-color:#93C;color:#fff;}
+
+.uniq{display:block;width:100%;height:auto;margin:10px auto 12px auto;float:none;clear:left;text-align:center;background-color:#222;color:#f1f1f1;padding:.3em 0em 1em;}
+.uniq a, .uniq a:visited{display:inline-block;padding:.3em 1em .3em;background-color:#26424A;text-decoration:none;color:#fff;border-radius:5px;font-size: calc(12px + 4 * ((100vw - 320px) / 680));font-weight:100;}
+.uniq a:hover{background-color:#93C;color:#fff;}
+#header{display:block;width:100%;height:auto;margin:0px auto;float:none;clear:left;text-align:center;background-color:#222;color:#f1f1f1;padding:.3em 0em .5em;text-align:center;}
+#header p{font-size: calc(22px + 6 * ((100vw - 320px) / 680));font-weight:100;}
+.boxed ul,.boxed ol{display:block;width:90%;height:auto;margin:0 auto;font-size: calc(14px + 4 * ((100vw - 320px) / 680));text-align:left;font-weight:300;}
+
+span.back{padding:1em;text-align:center;float:left;}
+
+.svg-icon-home {width: 1.5em;height: 1.5em;opacity:.5;}
+.svg-icon-home path,
+.svg-icon-home polygon,
+.svg-icon-home rect {fill: #ffffff;}
+.svg-icon-home circle {stroke: #ffffff;stroke-width: 1;}
+
+.svg-icon-home:hover{opacity:1;}
+
+.screenshots{display:block;width:90%;height:auto;padding:.5em;margin:10px auto 12px auto;}
+.screens{display:block;width:48%;height:auto;margin:0 auto;float:left;padding:.5em .5em 1em;text-align:center;transition:all .3s;}
+.screens img{display:block;width:90%;height:auto;margin:0 auto 10px auto;transition:all .3s;}
+.screens span{display:block;width:90%;height:auto;margin:3px auto 5px auto;font-size:14px;font-weight:100;color:#888;}
+.screens:hover span{display:block;width:90%;height:auto;margin:3px auto 5px auto;font-size:14px;font-weight:100;color:#000;}
+.screens:hover{background-color:#f1f1f1;}
+.screens:hover img{transform:scale(1.1);}
+
+
+.share{display:block;width:100%;height:auto;margin:20px auto 0px auto;text-align:center;background-color:#f1f1f1;padding:1em 0em 1em;}
+/*
+.share a,.share a:visited{padding:.2em .5em .2em;background-color:#09C;text-align:center;}
+.share a:hover{background-color:#069;}
+*/
+
+
+
+.downloadwrapper{display:block;width:100%;height:auto;margin:0 auto;padding:2em 0em 2em;text-align:center;background-color:#000;background-image: url(../../assets/img/doc-cover-berightback-overlay.jpg);background-size:cover;background-repeat:no-repeat;background-position:center;background-attachment:fixed;}
+.downloadwrapper_footer{display:block;width:100%;height:auto;margin:0 auto;padding:2em 0em 2em;text-align:center;background-color:#000;background-image: url(../../assets/img/weird.jpg);background-size:cover;background-repeat:no-repeat;background-position:center;background-attachment:fixed;}
+.download{display:block;width:80%;height:auto;margin:0 auto;padding:1.5em 2em 1.5em;text-align:left;background-color:rgba(0,0,0,.70);}
+.download p{display:block;width:90%;height:auto;margin:0 auto;font-size: calc(18px + 6 * ((100vw - 320px) / 680));font-weight:100;color:#fff;}
+.download h2{display:block;width:90%;height:auto;margin:0 auto;font-size: calc(28px + 6 * ((100vw - 320px) / 680));font-weight:400;color:#fff;}
+.download a,.download a:visited{display:block;width:40%;height:auto;margin:20px auto 22px auto;padding:1em 0em 1em;text-align:center;text-decoration:none;color:rgba(255,255,255,.50);border-radius:7px;background-color:#233C56;box-shadow:0 2px 3px 1px #000;transition:all .3s;font-size: calc(12px + 6 * ((100vw - 320px) / 680));text-transform:uppercase;}
+.download a:hover{background-color: rgb(251,7,127);color:#fff;text-decoration:none;box-shadow:0 1px 5px -3px #000;}
+h2 span.swing{display:inline-block;width:30px;height:auto;text-align:center;transform:rotate(-20deg);transform-origin:top center;animation: SwingIt 2s infinite;}
+.svg-icon-premium {width: 1em;height: 1em;transform:translate(2px,2px);margin-right:3px;}
+.svg-icon-premium path,
+.svg-icon-premium polygon,
+.svg-icon-premium rect {fill: #ffffff;}
+.svg-icon-premium circle {stroke: #ffffff;stroke-width: 1;}
+.svg-icon-download {width: 1em;height: 1em;margin-left:-10px;}
+.svg-icon-download path,
+.svg-icon-download polygon,
+.svg-icon-download rect {fill: #f1f1f1;}
+.svg-icon-download circle {stroke: #f1f1f1;stroke-width: 1;}
+
+@keyframes SwingIt  {
+    0% {transform:rotate(20deg);}
+	50% {transform:rotate(-20deg);fill: #FC3;stroke:#FC3;}
+	100% {transform:rotate(20deg);}}
+	
+	
+.svg-icon-twt {width: 1em;height: 1em;}
+.svg-icon-twt path,
+.svg-icon-twt polygon,
+.svg-icon-twt rect {fill: #ffffff;}
+.svg-icon-twt circle {stroke: #ffffff;stroke-width: 1;}
+
+
+.downloadbutton{display:block;width:50%;height:auto;margin:0 auto;float:left;text-align:center;padding:.7em 0em .7em;}
+.downloadbutton a,
+.downloadbutton a:visited{padding:.5em 2em .5em;text-align:center;border-radius:7px;background-color:#09C;box-shadow:0 2px 3px -1px #000;transition:all .3s;font-size: calc(14px + 6 * ((100vw - 320px) / 680));text-transform:uppercase;color:#fff;}
+.downloadbutton a:hover{background-color:#233C56;color:#fff;text-decoration:none;box-shadow:0 1px 5px -3px #999;}
+
+
+
+.clearfix{display:block;width:100%;height:0px;float:none;clear:left;}
+a, a:visited{color:#F63;text-decoration:none;}
+a:hover{color:#06C;text-decoration:none;}
+
+</style>
+</head>
+
+<body>
+
+
+<div id="container">
+    <div id="header">
+    <span class="back"><a href="../index.html"><svg class="svg-icon-home" viewBox="0 0 20 20">
+							<path d="M18.121,9.88l-7.832-7.836c-0.155-0.158-0.428-0.155-0.584,0L1.842,9.913c-0.262,0.263-0.073,0.705,0.292,0.705h2.069v7.042c0,0.227,0.187,0.414,0.414,0.414h3.725c0.228,0,0.414-0.188,0.414-0.414v-3.313h2.483v3.313c0,0.227,0.187,0.414,0.413,0.414h3.726c0.229,0,0.414-0.188,0.414-0.414v-7.042h2.068h0.004C18.331,10.617,18.389,10.146,18.121,9.88 M14.963,17.245h-2.896v-3.313c0-0.229-0.186-0.415-0.414-0.415H8.342c-0.228,0-0.414,0.187-0.414,0.415v3.313H5.032v-6.628h9.931V17.245z M3.133,9.79l6.864-6.868l6.867,6.868H3.133z"></path>
+						</svg></a></span>
+       <p>Be right back - Overlay</p>
+    </div>
+   
+   
+   
+ <div class="downloadwrapper">       
+       <div class="download">
+       <h2><span class="swing"><svg class="svg-icon-premium" viewBox="0 0 20 20">
+							<path d="M15.94,10.179l-2.437-0.325l1.62-7.379c0.047-0.235-0.132-0.458-0.372-0.458H5.25c-0.241,0-0.42,0.223-0.373,0.458l1.634,7.376L4.06,10.179c-0.312,0.041-0.446,0.425-0.214,0.649l2.864,2.759l-0.724,3.947c-0.058,0.315,0.277,0.554,0.559,0.401l3.457-1.916l3.456,1.916c-0.419-0.238,0.56,0.439,0.56-0.401l-0.725-3.947l2.863-2.759C16.388,10.604,16.254,10.22,15.94,10.179M10.381,2.778h3.902l-1.536,6.977L12.036,9.66l-1.655-3.546V2.778z M5.717,2.778h3.903v3.335L7.965,9.66L7.268,9.753L5.717,2.778zM12.618,13.182c-0.092,0.088-0.134,0.217-0.11,0.343l0.615,3.356l-2.938-1.629c-0.057-0.03-0.122-0.048-0.184-0.048c-0.063,0-0.128,0.018-0.185,0.048l-2.938,1.629l0.616-3.356c0.022-0.126-0.019-0.255-0.11-0.343l-2.441-2.354l3.329-0.441c0.128-0.017,0.24-0.099,0.295-0.215l1.435-3.073l1.435,3.073c0.055,0.116,0.167,0.198,0.294,0.215l3.329,0.441L12.618,13.182z"></path>
+						</svg></span> Be right back &amp; Top Tippers</h2>
+       <p>View this custom overlay online. If you like it, take it</p>
+         <a href="be-right-back-splitcam-overlay.html" target="_blank"><svg class="svg-icon-download" viewBox="0 0 20 20">
+							<path d="M17.237,3.056H2.93c-0.694,0-1.263,0.568-1.263,1.263v8.837c0,0.694,0.568,1.263,1.263,1.263h4.629v0.879c-0.015,0.086-0.183,0.306-0.273,0.423c-0.223,0.293-0.455,0.592-0.293,0.92c0.07,0.139,0.226,0.303,0.577,0.303h4.819c0.208,0,0.696,0,0.862-0.379c0.162-0.37-0.124-0.682-0.374-0.955c-0.089-0.097-0.231-0.252-0.268-0.328v-0.862h4.629c0.694,0,1.263-0.568,1.263-1.263V4.319C18.5,3.625,17.932,3.056,17.237,3.056 M8.053,16.102C8.232,15.862,8.4,15.597,8.4,15.309v-0.89h3.366v0.89c0,0.303,0.211,0.562,0.419,0.793H8.053z M17.658,13.156c0,0.228-0.193,0.421-0.421,0.421H2.93c-0.228,0-0.421-0.193-0.421-0.421v-1.263h15.149V13.156z M17.658,11.052H2.509V4.319c0-0.228,0.193-0.421,0.421-0.421h14.308c0.228,0,0.421,0.193,0.421,0.421V11.052z"></path>
+						</svg> VIEW ONLINE DEMO</a>
+       </div>
+  </div>  
+   
+    
+    <div class="boxed">
+      <p><strong>Be Right Back SplitCam overlay and Top Tippers list</strong></p>
+      <p>This overlay is a Browser-based source layer showing a full screen overlay with custom side image, editable texts and Top Tippers custom section.</p>
+      <p>Runs locally from your laptop/pc and doesn't require external or online-hosted resources.</p>
+      <p>Install process is fast and easy so follow the install instructions steps and I'll mention about how to customize it later</p>
+      <ol>
+        <li>Download and unzip the content od the folder</li>
+        <li>Open SplitCam Sofware and click the + button next to Media Layers library</li>
+        <li>Select Browser as source layer.</li>
+        <li>Go back to downloaded folder and click the <code>be-right-back-splitcam-overlay.html</code> to open it in your defeault browser.</li>
+        <li>Copy the full URL path from address bar and paste it on SplitCam's drop-down URL box. Click Add button</li>
+        <li>If necessary, resize, drag to re-position the layer overlay to cover the entire screen</li>
+      </ol>
+      <p><strong>Editing & Customization</strong><br>
+      Right now SplitCam Software is not ready to allow interaction between the source overlay and user via their interface (function available on OBS) but there are ways to be able to edit and customize the content of this overlay.</p>
+      <p><strong>Option One. Edit side image and text but don't refresh the page</strong><br>
+      The browser page is coded in such way to allow you to be able to click on the side image and replace it with your own photo, click on texts to change them py typing your own texts but here's the catch... don't refresh the page or close it, all editing will revert back to default. So once you have the page edited in your default browser copy the full path URL and paste it in SplitCam (step 5 mentioned above)<br>
+      This is a basic feature using <code>contenteditable="true"</code> attribute to some elements to allow editing front-end. Do this editing before adding the browser source in SplitCam</p>
+
+<p><strong>Option Two. Dig into source markup</strong><br>
+If you're not afraid to get your hands dirty, you can use the source editor tool to view, edit and save the web page.<br>
+The download is providing a very basic source editor which allows uou to upload the html file, view and edit the source markup. When you're done editing the source code, click the Preview button to render the page and use the Save button to save the file. Save your new html file in the same folder so your images will have the same URL path, otherwise, broken images will showup</p>
+
+<p><strong>Option Three. Pay for customization</strong><br>
+Well, that's one option too<br> If you don't want to waste your time and doing this by yourself, the option of "paying someone" is on the table.</p>
+      
+      
+      <div class="screenshots" style="display:none;">
+        <div class="screens"><a href="#" target="_blank">screenshot should be here</a><span>1. text should be here</span></div>
+        
+        <div class="screens"><a href="#" target="_blank">screenshot should be here</a><span>2. text should be here</span></div>
+        <div class="screens"><a href="#" target="_blank">screenshot should be here</a><span>3. text should be here</span></div>
+        <div class="screens"><a href="#" target="_blank">screenshot should be here</a><span>4. text should be here</span></div>
+        <div class="screens"><a href="#" target="_blank">screenshot should be here</a><span>5. text should be here</span></div>
+        <div class="screens"><a href="#" target="_blank">screenshot should be here</a><span>6. text should be here</span></div>
+        
+        
+        <div class="clearfix"></div>
+      </div>
+      
+      <p><strong>Things you might want to know:</strong></p>
+      <p>Downloaded folder includes all images used for this design, this documentation with install / editing and of course the overlay file</p>
+      <p>Runs locally, meaning no external resources (codes, links, images)</p>
+      <p>Compatible with OBS too</p>
+      
+      
+      
+    </div>
+
+
+
+
+<div class="share">
+<p class="downloadbutton"><a href="https://cssmfc.github.io/camgirl-splitcam/demos/be-right-back-overlay/be-right-back-overlay.zip" target="_blank">Download</a></p>
+<p class="downloadbutton"><a href="be-right-back-splitcam-overlay.html" target="_blank">Demo</a></p>
+
+<div class="clearfix"></div>
+
+                        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Be right back - Custom #SplitCam overlay for webcam performers download and demo online" data-via="CamgirlCloud" data-hashtags="camgirl" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
+      <div class="clearfix"></div>                  
+</div>
+
+
+
+
+<div class="downloadwrapper_footer">       
+       <div class="download">
+       <h2><span class="swing"><svg class="svg-icon-premium" viewBox="0 0 20 20">
+							<path d="M15.94,10.179l-2.437-0.325l1.62-7.379c0.047-0.235-0.132-0.458-0.372-0.458H5.25c-0.241,0-0.42,0.223-0.373,0.458l1.634,7.376L4.06,10.179c-0.312,0.041-0.446,0.425-0.214,0.649l2.864,2.759l-0.724,3.947c-0.058,0.315,0.277,0.554,0.559,0.401l3.457-1.916l3.456,1.916c-0.419-0.238,0.56,0.439,0.56-0.401l-0.725-3.947l2.863-2.759C16.388,10.604,16.254,10.22,15.94,10.179M10.381,2.778h3.902l-1.536,6.977L12.036,9.66l-1.655-3.546V2.778z M5.717,2.778h3.903v3.335L7.965,9.66L7.268,9.753L5.717,2.778zM12.618,13.182c-0.092,0.088-0.134,0.217-0.11,0.343l0.615,3.356l-2.938-1.629c-0.057-0.03-0.122-0.048-0.184-0.048c-0.063,0-0.128,0.018-0.185,0.048l-2.938,1.629l0.616-3.356c0.022-0.126-0.019-0.255-0.11-0.343l-2.441-2.354l3.329-0.441c0.128-0.017,0.24-0.099,0.295-0.215l1.435-3.073l1.435,3.073c0.055,0.116,0.167,0.198,0.294,0.215l3.329,0.441L12.618,13.182z"></path>
+						</svg></span> PREMIUM DESIGNS &amp; TAILORED PROJECTS - CAMGIRL.CLOUD</h2>
+       <p>Need a custom Chaturbate, NiteFlirt bio design for your page? What do you think about Camgirl Live Editor tool?</p>
+         <a href="https://camgirl.cloud/editor/" target="_blank"><svg class="svg-icon-download" viewBox="0 0 20 20">
+							<path d="M9.719,17.073l-6.562-6.51c-0.27-0.268-0.504-0.567-0.696-0.888C1.385,7.89,1.67,5.613,3.155,4.14c0.864-0.856,2.012-1.329,3.233-1.329c1.924,0,3.115,1.12,3.612,1.752c0.499-0.634,1.689-1.752,3.612-1.752c1.221,0,2.369,0.472,3.233,1.329c1.484,1.473,1.771,3.75,0.693,5.537c-0.19,0.32-0.425,0.618-0.695,0.887l-6.562,6.51C10.125,17.229,9.875,17.229,9.719,17.073 M6.388,3.61C5.379,3.61,4.431,4,3.717,4.707C2.495,5.92,2.259,7.794,3.145,9.265c0.158,0.265,0.351,0.51,0.574,0.731L10,16.228l6.281-6.232c0.224-0.221,0.416-0.466,0.573-0.729c0.887-1.472,0.651-3.346-0.571-4.56C15.57,4,14.621,3.61,13.612,3.61c-1.43,0-2.639,0.786-3.268,1.863c-0.154,0.264-0.536,0.264-0.69,0C9.029,4.397,7.82,3.61,6.388,3.61"></path>
+						</svg> CAMGIRL LIVE EDITOR</a>
+       </div>
+  </div>  
+
+<div id="footer" class="uniq">
+<p class="discussions"><a href="https://github.com/cssmfc/camgirl-splitcam/discussions" target="_blank">Questions suggestions or feedback? Post on Discussion section</a></p>
+</div>
+
+</div>
+
+
+
+</body>
+</html>

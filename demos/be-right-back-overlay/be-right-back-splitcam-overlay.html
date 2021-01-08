@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Be right back - SplitCam overlay</title>
+<style>
+*{box-sizing:border-box;}
+body{width:100%;height:auto;margin:0 auto;font-size: calc(19px + 6 * ((100vw - 320px) / 680));font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;color:#F69;background-color:#000;background-image:url(images/cle_bg_black.jpg);background-repeat:no-repeat;background-size:cover;background-position:center;background-attachment:fixed;}
+html{font-size: calc(19px + 6 * ((100vw - 320px) / 680));font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;}
+.kol-1{width:8.33%}.kol-2{width:16.66%}.kol-3{width:25%}.kol-4{width:33.33%}.kol-5{width:41.66%}.kol-5-half{width:47.66%}.kol-6{width:50%}.kol-7{width:58.33%}.kol-8{width:66.66%}.kol-9{width:75%}.kol-10{width:83.33%}.kol-11{width:91.66%}.kol-12{width:100%}[class*="kol-"]{float:left;padding:15px;border:0px solid #ccc}[class*="no"]{float:left;padding:0}[class*="padd20"]{display:block;padding:20px}.clearfix{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.tcenter{text-align:center;}
+
+#containermain{display:block;width:100%;margin:0 auto;height:100vh;}
+.leftside{-webkit-box-reflect: below -29px -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.3) 0%, transparent 30%, transparent 100%);box-reflect: below -37px -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.5) 0%, transparent 50%, transparent 100%);}
+.leftside img{display:block;width:80%;height:auto;margin:0 auto;border-radius:15px;box-shadow:0 0 22px #F6C;}
+.rightside{background-color:rgba(0,0,0,.70);padding:3em 0 3.7em;}
+.rightside h1{display:block;width:90%;height:auto;margin:0 auto;font-weight:500;font-size: calc(33px + 6 * ((100vw - 320px) / 680));}
+
+
+
+.toptippers{display:block;width:90%;height:auto;margin:30px 0 12px 0;background-color:rgba(0,0,0,.0);text-align:center;padding:1.5em 0 1.5em;color:#f1f1f1;font-size: calc(16px + 4 * ((100vw - 320px) / 680));font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;font-weight:100;}
+.toptippers span{display:block;width:80%;height:auto;margin:0 auto;background-color:rgba(0,0,0,0.70);padding:.5em 1em .5em;text-align:center;font-weight:100;background-image:url(images/crnprm-1.png);background-repeat:no-repeat;background-size:30px auto;background-position:1% 50%;text-indent:35px;text-align:left;border-bottom:1px solid #444;}
+.toptippers h3{font-size: calc(19px + 6 * ((100vw - 320px) / 680));font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;font-weight:500;color:#F69;}
+
+.centeredmargins{padding:1.3em 0 1.7em;margin:1em auto 1em auto;}
+
+.updown img{-webkit-animation-name: UpdDown;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;}
+@-webkit-keyframes UpdDown {
+    0% {-webkit-transform: translateY(25px);}
+    65% {-webkit-transform: translateY(-3px) rotate(3deg);}
+    100% {-webkit-transform: translateY(25px);}
+}
+
+/*** Change Image Upload ***/
+#dropzone{visibility:visible;}
+#dropzone img,.output img{display:block;width:90%;height:auto;margin:0 auto;visibility:visible;}
+#dropzone:hover{cursor:pointer;}
+#dropzone:hover{opacity:0.9;}
+#dropzone i{display:block;width:90%;height:auto;padding:7px 0;text-align:center;margin:10px auto 12px auto;font-size:14px;font-style:normal;text-transform:none;}
+#dropzone:empty:not(:focus):before{content:attr(data-text);}
+[contenteditable=true]:empty:not(:focus):before{content:attr(data-text);}
+
+.clearfix{display:block;width:100%;height:0px;float:none;clear:left;margin:0 auto;}
+</style>
+</head>
+
+<body>
+
+<div id="brb06">
+ <div id="containermain" class="kol-12 no">
+ 
+
+ <div class="kol-4 leftside updown">
+   <div id="dropzone" class="droppingstyle output dropit"><img id="avatar" src="images/avatar.png"/></div>
+ </div>
+ 
+ 
+ <div class="kol-8 rightside">
+ <h1 id="minutes" contenteditable="true">Be right back in a few minutes</h1>
+ <div class="toptippers tcenter">
+  <h3 id="text1" contenteditable="true">My Top Tippers</h3>
+             <span id="text2" contenteditable="true">Premium Username - 8000 tokens</span>
+             <span id="text3" contenteditable="true">Premium Username - 5000 tokens</span>
+             <span id="text4" contenteditable="true">Premium Username - 4000 tokens</span>
+       </div>
+       
+       
+       
+<div class="clearfix"></div>
+
+</div>
+
+</div>
+
+
+
+<script>
+  (function(window) {
+    function triggerCallback(e, callback) {
+      if(!callback || typeof callback !== 'function') {
+        return;
+      }
+      var files;
+      if(e.dataTransfer) {
+        files = e.dataTransfer.files;
+      } else if(e.target) {
+        files = e.target.files;
+      }
+      callback.call(null, files);
+    }
+    function makeDroppable(ele, callback) {
+      var input = document.createElement('input');
+      input.setAttribute('type', 'file');
+      input.setAttribute('multiple', true);
+      input.style.display = 'none';
+      input.addEventListener('change', function(e) {
+        triggerCallback(e, callback);
+      });
+      ele.appendChild(input);
+      
+      ele.addEventListener('dragover', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        ele.classList.add('dragover');
+      });
+
+      ele.addEventListener('dragleave', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        ele.classList.remove('dragover');
+      });
+
+      ele.addEventListener('drop', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        ele.classList.remove('dragover');
+        triggerCallback(e, callback);
+      });
+      
+      ele.addEventListener('click', function() {
+        input.value = null;
+        input.click();
+      });
+    }
+    window.makeDroppable = makeDroppable;
+  })(this);
+  (function(window) {
+    makeDroppable(window.document.querySelector('.droppingstyle'), function(files) {
+      console.log(files);
+      var output = document.querySelector('.output');
+      output.innerHTML = '';
+      for(var i=0; i<files.length; i++) {
+        if(files[i].type.indexOf('image/') === 0) {
+          output.innerHTML += '<img src="' + URL.createObjectURL(files[i]) + '" />';
+        }
+	  }
+        
+    });
+  })(this);
+</script> 
+
+
+
+
+</body>
+</html>
